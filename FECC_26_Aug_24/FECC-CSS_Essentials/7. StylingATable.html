@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling a Table</title>
+    <style>
+
+        table{  
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border:1px solid #e6e6e6;
+        }
+
+        th,td{
+            padding: 10px;
+            text-align: left;
+        }
+
+        tr>td{
+            border:#e61b1b;
+        }
+
+        th{
+            background-color: rgb(7, 149, 7);
+        }
+
+        tr:nth-child(3){
+            background-color: #e6e6e6;
+        }
+        
+        td, th{
+            border-left:2px solid #AFAFAF;
+            border-right:2px solid#AFAFAF;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+                <th>Description</th>
+                <th>Total Price</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10</td>
+                <td>This is Product 1</td>
+                <td>$20</td>
+            </tr>
+
+            <tr>
+                <td>Product 2</td>
+                <td>3</td>
+                <td>$20</td>
+                <td>This is Product 2</td>
+                <td>$60</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">Sum</td>
+                <td>$80</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
