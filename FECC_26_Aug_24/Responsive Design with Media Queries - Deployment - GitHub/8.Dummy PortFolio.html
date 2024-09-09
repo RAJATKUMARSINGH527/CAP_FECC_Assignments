@@ -68,18 +68,7 @@
             flex-direction: column;
             align-items: center;
         }
-        section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        section img {
-            width: 45%;
-            margin-right: 20px;
-        }
-        
-
+    
         @media screen and (max-width: 768px) {
             nav a {
                 display: none;
@@ -90,7 +79,6 @@
                 appearance: none;/* Standard syntax */
                 -webkit-appearance: none;/* For Chrome, Safari, and Opera */
                 -moz-appearance: none; /* For Firefox */
-                appearance: none;
                 background-color: #555;
                 padding: 10px;
                 border-radius: 5px;
@@ -99,10 +87,21 @@
                 box-sizing: border-box;
                 color: #fff;
             }
+
         }
+    
+        @media screen and (min-width: 769px) {
+            section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-           
-
+            section img {
+                width: 45%;
+                margin-right: 20px;
+            }
+        }
         
     </style>
 </head>
